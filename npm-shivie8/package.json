@@ -1,0 +1,27 @@
+{
+  "name": "shivie8",
+  "title": "shivIE8",
+  "version": "1.0.0",
+  "author": "Andreas Svensson <andreas@syranide.com>",
+  "description": "Minimal HTML5 element shiv for IE8",
+  "homepage": "https://github.com/syranide/shivie8",
+  "bugs": "https://github.com/syranide/shivie/issues",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/syranide/shivie8"
+  },
+  "keywords": [
+    "html5shiv",
+    "html5shim",
+    "html5",
+    "oldie",
+    "ie8",
+    "shiv",
+    "shim"
+  ],
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "main": "shivie8.js"
+}
