@@ -35,20 +35,23 @@ Shivs `document` on load, call `shivIEDocumentElements(otherDocument)` if necess
 
 ## Use as module
 
-Shivs `document` on require, call `shivIEDocumentElements(otherDocument)` if necessary.
+Shivs `document` on require, call `shivie8(otherDocument)` if necessary.
 
 ```
 // dist/amd/shivie8.js
-define(['shivie8'], function(shivIEDocumentElements) {
-  shivIEDocumentElements(document);
+define(['shivie8'], function(shivie8) {
+  // optional
+  shivie8(otherDocument);
 });
 ```
 ```
 // dist/commonjs/shivie8.js
 // npm install shivie8
 // bower install --save shivie8
-var shivIEDocumentElements = require('shivie8');
-shivIEDocumentElements(document);
+require('shivie8');
+// or
+var shivie8 = require('shivie8');
+shivie8(otherDocument);
 ```
 
 ## Template danger
