@@ -13,15 +13,15 @@ IE Quirks and IE6+ are also supported by this shiv. FireFox 3+ and Safari 4+ hav
 
 This script does NOT attach a stylesheet with default styles for HTML5 elements. Instead, copy the CSS below and put it at the top of your base/reset stylesheet, customize as you please.
 
-```
-article,aside,dialog,figcaption,figure,footer,header,hgroup,main,nav,section {
+```css
+article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block;
 }
 mark {
   background: #FFFF00; color: #000000;
 }
 template {
-  display:none;
+  display: none;
 }
 ```
 
@@ -29,7 +29,7 @@ template {
 
 Shivs `document` on load, call `shivIEDocumentElements(otherDocument)` if necessary.
 
-```
+```html
 <script src="shivie8.min.js"></script>
 ```
 
@@ -37,17 +37,17 @@ Shivs `document` on load, call `shivIEDocumentElements(otherDocument)` if necess
 
 Shivs `document` on require, call `shivie8(otherDocument)` if necessary.
 
-```
+```js
 // dist/amd/shivie8.js
 define(['shivie8'], function(shivie8) {
   // optional
   shivie8(otherDocument);
 });
 ```
-```
+```js
 // dist/commonjs/shivie8.js
 // npm install shivie8
-// bower install --save shivie8
+// bower install shivie8
 require('shivie8');
 // or
 var shivie8 = require('shivie8');
